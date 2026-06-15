@@ -2,12 +2,28 @@
 
 ## 📌 Overview
 
-This project implements a Service Cloud solution to automate support operations using SLA monitoring and escalation logic.
+This project demonstrates a Service Cloud implementation focused on automating case management using SLA tracking, Apex-based escalation, and performance monitoring.
 
-Key capabilities include:
-- Automatic detection of SLA breaches using Scheduled Apex
-- Case escalation with task creation for agents
-- Tracking of first response and resolution times
-- Agent productivity reporting and dashboard
+The solution is designed to ensure timely handling of support cases by automatically identifying SLA breaches and triggering escalation actions.
 
-The solution helps improve response times, ensures accountability, and provides better visibility into support team performance.
+---
+
+## 🧩 Key Features
+
+- **SLA Monitoring**  
+  Tracks case deadlines using a custom `SLA_Deadline__c` field and identifies overdue cases.
+
+- **Automated Case Escalation**  
+  Uses Scheduled Apex (`CaseEscalationScheduler`) and service logic to:
+  - Detect SLA breaches  
+  - Update escalation status  
+  - Create high-priority follow-up tasks  
+
+- **Agent Productivity Tracking**  
+  Captures:
+  - First response time  
+  - Resolution time  
+  - Escalation status 
+---
+
+## ⚙️ How It Works
