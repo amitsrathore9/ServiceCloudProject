@@ -27,3 +27,17 @@ The solution is designed to ensure timely handling of support cases by automatic
 ---
 
 ## ⚙️ How It Works
+
+Case Created
+↓
+SLA Deadline Assigned
+↓
+Scheduled Apex Runs Periodically
+↓
+CaseEscalationService Evaluates Cases
+↓
+Escalation Triggered (if SLA breached)
+↓
+Task Created for Agent
+↓
+Reports & Dashboard Updated
